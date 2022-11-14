@@ -12,4 +12,4 @@ Scripts included are as follows:
 
 All scripts require user input of filepaths to input data, voxel dimensions of the specific images analysed and filepath for the output summary data.
 
-For further details of methods, please see the above paper.
+For further details, please see the above paper.
