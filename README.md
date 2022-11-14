@@ -10,4 +10,6 @@ Scripts included are as follows:
 
 - lone_ends_whole_mRNAs_in_Pbodies.py : For the analysis of the colocalisation of whole mRNAs, and lone mRNA ends, with P-bodies. This script requires staining of mRNAs with two sets of probes, one targeted to each end of the mRNA, tagged with different fluorophores, as well as P-bodies marked by a different fluorescent marker. mRNAs are paired to identify whole mRNAs and lone ends, and the colocalisation of each of these species with P-bodies is assessed as above.
 
+All scripts require user input of filepaths to input data, voxel dimensions of the specific images analysed and filepath for the output summary data.
+
 For further details of methods, please see the above paper.
