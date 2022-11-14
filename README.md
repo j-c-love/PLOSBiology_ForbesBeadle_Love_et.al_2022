@@ -1,5 +1,5 @@
 # PLOSBiology_ForbesBeadle_Love_2022
-Code to accompany "Single molecule imaging and modelling of mRNA decay dynamics in the Drosophila embryo", PLOS Biology, 2022
+Code to accompany "Combined modelling of mRNA decay dynamics and single molecule imaging in the _Drosophila_ embryo uncovers a role for P-bodies in 5’ to 3’ degradation", PLOS Biology, 2022
 
 These scripts are for the analysis of Single molecule fluorescence in situ hybridisation (smFISH) imaging data.
 
