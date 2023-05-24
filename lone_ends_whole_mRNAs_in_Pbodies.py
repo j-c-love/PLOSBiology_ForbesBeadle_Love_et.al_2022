@@ -172,9 +172,9 @@ coloc_singles_end_in_pbody = coloc_singles[coloc_singles['end_object'].isin(end_
 coloc_pbody_either_end = coloc_singles_start_in_pbody.append(coloc_singles_end_in_pbody)
 coloc_pbody_either_end.drop_duplicates(inplace=True)
 
-lone_ends_summary_stats = {'probe_set': ['start', 'end'], 'total_singles' :[len(start_singles), len(end_singles)],'num_lone_singles': [len(lone_start_singles), len(lone_end_singles)],'num_lone_singles_in_pbodies': [len(lone_start_in_pbody), len(lone_end_in_pbody)],'percentage_in_pbodies': [(len(lone_start_in_pbody)/len(lone_start_singles)), (len(lone_end_in_pbody)/len(lone_end_singles))]}
+lone_ends_summary_stats = {'probe_set': ['start', 'end'], 'total_singles' :[len(start_singles), len(end_singles)],'num_lone_singles': [len(lone_start_singles), len(lone_end_singles)],'num_lone_singles_in_pbodies': [len(lone_start_in_pbody), len(lone_end_in_pbody)],'proportion_in_pbodies': [(len(lone_start_in_pbody)/len(lone_start_singles)), (len(lone_end_in_pbody)/len(lone_end_singles))]}
 lone_ends_summary_stats_df = pd.DataFrame(data=lone_ends_summary_stats)
-whole_summary_stats = {'total_whole' :[len(coloc_singles)],'whole_in_Pbodies': [len(coloc_pbody_either_end)],'percentage_in_pbodies': [(len(coloc_pbody_either_end)/len(coloc_singles))]}
+whole_summary_stats = {'total_whole' :[len(coloc_singles)],'whole_in_Pbodies': [len(coloc_pbody_either_end)],'proportion_in_pbodies': [(len(coloc_pbody_either_end)/len(coloc_singles))]}
 whole_summary_stats_df = pd.DataFrame(data=whole_summary_stats)
 
 print(lone_ends_summary_stats_df)
